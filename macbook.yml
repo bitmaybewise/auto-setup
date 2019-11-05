@@ -1,0 +1,36 @@
+---
+- hosts: localhost
+  tasks:
+    - name: check if brew is installed
+      command: brew -v
+      register: brew_check
+    - name: install brew
+      when: brew_check is failed
+      shell: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    - name: installing homebrew packages
+      homebrew:
+        name: ['git',
+               'htop',
+               'kubectl',
+               'git-lfs',
+               'macvim'
+              ]
+    - name: installing homebrew cask packages
+      homebrew_cask:
+        name: "{{ item }}"
+      with_items:
+        - spectacle
+        - visual-studio-code
+        - firefox
+        - opera
+        - iterm2
+        - anki
+        - google-cloud-sdk
+        - postman
+    - name: git lfs check
+      command: git lfs -v
+      register: git_lfs_check
+    - name: install git lfs
+      when: git_lfs_check is failed
+      command: git lfs install
+               
