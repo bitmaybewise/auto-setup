@@ -31,6 +31,7 @@
         - spotify
         - telegram
         - whatsapp
+        - megasync
     - name: git lfs check
       command: git lfs -v
       register: git_lfs_check
