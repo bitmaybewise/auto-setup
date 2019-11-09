@@ -33,6 +33,7 @@
         - whatsapp
         - megasync
         - libreoffice
+        - kindle
     - name: git lfs check
       command: git lfs -v
       register: git_lfs_check
