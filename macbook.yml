@@ -13,7 +13,8 @@
                'htop',
                'kubectl',
                'git-lfs',
-               'macvim'
+               'macvim',
+               'go'
               ]
     - name: installing homebrew cask packages
       homebrew_cask:
@@ -34,6 +35,7 @@
         - megasync
         - libreoffice
         - kindle
+        - calibre
     - name: git lfs check
       command: git lfs -v
       register: git_lfs_check
