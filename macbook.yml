@@ -15,7 +15,8 @@
                'git-lfs',
                'macvim',
                'go',
-               'minikube'
+               'minikube',
+               'watch'
               ]
     - name: installing homebrew cask packages
       homebrew_cask:
