@@ -14,7 +14,8 @@
                'kubectl',
                'git-lfs',
                'macvim',
-               'go'
+               'go',
+               'minikube'
               ]
     - name: installing homebrew cask packages
       homebrew_cask:
@@ -36,6 +37,9 @@
         - libreoffice
         - kindle
         - calibre
+        - virtualbox
+        - virtualbox-extension-pack
+        - vagrant
     - name: git lfs check
       command: git lfs -v
       register: git_lfs_check
