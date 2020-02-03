@@ -16,7 +16,8 @@
                'macvim',
                'go',
                'minikube',
-               'watch'
+               'watch',
+               'p7zip'
               ]
     - name: installing homebrew cask packages
       homebrew_cask:
