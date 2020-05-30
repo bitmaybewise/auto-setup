@@ -17,7 +17,8 @@
                'go',
                'minikube',
                'watch',
-               'p7zip'
+               'p7zip',
+               'imagemagick'
               ]
     - name: installing homebrew cask packages
       homebrew_cask:
@@ -43,6 +44,7 @@
         - virtualbox-extension-pack
         - vagrant
         - joplin
+        - notion
         - coconutbattery
     - name: git lfs check
       command: git lfs -v
