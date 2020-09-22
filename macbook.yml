@@ -18,7 +18,8 @@
                'minikube',
                'watch',
                'p7zip',
-               'imagemagick'
+               'imagemagick',
+               'gh'
               ]
     - name: installing homebrew cask packages
       homebrew_cask:
@@ -46,6 +47,7 @@
         - joplin
         - notion
         - coconutbattery
+        - vlc
     - name: git lfs check
       command: git lfs -v
       register: git_lfs_check
