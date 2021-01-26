@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  tasks:
+    - name: installing packages
+      apt:
+        pkg:
+          - git
+          - htop
+          - vim
+          - golang
+          - make
