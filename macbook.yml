@@ -1,28 +1,19 @@
 ---
 - hosts: localhost
   tasks:
-    - name: check if brew is installed
-      command: brew -v
-      register: brew_check
-    - name: install brew
-      when: brew_check is failed
-      shell: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    - name: installing homebrew packages
-      homebrew:
+    - homebrew:
         name: ['git',
                'htop',
                'kubectl',
                'git-lfs',
                'macvim',
-               'go',
                'minikube',
                'watch',
                'p7zip',
                'imagemagick',
                'gh'
               ]
-    - name: installing homebrew cask packages
-      homebrew_cask:
+    - homebrew_cask:
         name: "{{ item }}"
       with_items:
         - spectacle
@@ -31,20 +22,12 @@
         - opera
         - iterm2
         - anki
-        - google-cloud-sdk
-        - postman
         - deepl
         - spotify
-        - telegram
-        - whatsapp
-        - megasync
         - libreoffice
         - kindle
         - calibre
-        - virtualbox
-        - virtualbox-extension-pack
         - vagrant
-        - joplin
         - notion
         - coconutbattery
         - vlc
