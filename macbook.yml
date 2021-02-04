@@ -11,7 +11,8 @@
                'watch',
                'p7zip',
                'imagemagick',
-               'gh'
+               'gh',
+               'pv'
               ]
     - homebrew_cask:
         name: "{{ item }}"
