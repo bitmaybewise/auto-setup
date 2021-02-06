@@ -12,7 +12,8 @@
                'p7zip',
                'imagemagick',
                'gh',
-               'pv'
+               'pv',
+               'openjdk'
               ]
     - homebrew_cask:
         name: "{{ item }}"
