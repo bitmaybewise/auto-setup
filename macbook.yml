@@ -2,19 +2,22 @@
 - hosts: localhost
   tasks:
     - homebrew:
-        name: ['git',
-               'htop',
-               'kubectl',
-               'git-lfs',
-               'macvim',
-               'minikube',
-               'watch',
-               'p7zip',
-               'imagemagick',
-               'gh',
-               'pv',
-               'openjdk'
-              ]
+        name:
+          [
+            "git",
+            "git-gui",
+            "htop",
+            "kubectl",
+            "macvim",
+            "minikube",
+            "helm",
+            "watch",
+            "p7zip",
+            "imagemagick",
+            "gh",
+            "pv",
+            "openjdk",
+          ]
     - homebrew_cask:
         name: "{{ item }}"
       with_items:
@@ -29,14 +32,4 @@
         - libreoffice
         - kindle
         - calibre
-        - vagrant
-        - notion
-        - coconutbattery
         - vlc
-    - name: git lfs check
-      command: git lfs -v
-      register: git_lfs_check
-    - name: install git lfs
-      when: git_lfs_check is failed
-      command: git lfs install
-               
