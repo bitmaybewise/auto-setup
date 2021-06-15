@@ -17,6 +17,8 @@
             "gh",
             "pv",
             "openjdk",
+            "jq",
+            "yq",
           ]
     - homebrew_cask:
         name: "{{ item }}"
