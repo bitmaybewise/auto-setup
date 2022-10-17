@@ -9,8 +9,6 @@
             "htop",
             "kubectl",
             "macvim",
-            "minikube",
-            "helm",
             "watch",
             "p7zip",
             "imagemagick",
@@ -26,7 +24,6 @@
         - spectacle
         - visual-studio-code
         - firefox
-        - opera
         - iterm2
         - anki
         - deepl
@@ -35,3 +32,4 @@
         - kindle
         - calibre
         - vlc
+        - fork
