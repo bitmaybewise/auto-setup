@@ -18,6 +18,8 @@
             "jq",
             "yq",
           ]
+    - homebrew_tap:
+        name: homebrew/cask-fonts
     - homebrew_cask:
         name: "{{ item }}"
       with_items:
@@ -34,3 +36,5 @@
         - vlc
         - fork
         - tableplus
+        - megasync
+        - font-fira-code
