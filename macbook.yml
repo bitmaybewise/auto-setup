@@ -17,6 +17,7 @@
             "openjdk",
             "jq",
             "yq",
+            "gpg",
           ]
     - homebrew_tap:
         name: homebrew/cask-fonts
