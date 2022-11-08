@@ -18,6 +18,7 @@
             "jq",
             "yq",
             "gpg",
+            "asdf",
           ]
     - homebrew_tap:
         name: homebrew/cask-fonts
