@@ -6,13 +6,14 @@
           [
             "git",
             "git-gui",
+            "glab"
+            "gh",
             "htop",
             "kubectl",
             "macvim",
             "watch",
             "p7zip",
             "imagemagick",
-            "gh",
             "pv",
             "openjdk",
             "jq",
