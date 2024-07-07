@@ -19,8 +19,9 @@
             "jq",
             "yq",
             "gpg",
-            "rtx",
-            "oci-cli"
+            "mise",
+            "oci-cli",
+            "glow"
           ]
     - homebrew_tap:
         name: homebrew/cask-fonts
@@ -28,6 +29,7 @@
         name: "{{ item }}"
       with_items:
         - spectacle
+        - rectangle
         - visual-studio-code
         - firefox
         - iterm2
